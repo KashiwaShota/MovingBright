@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5837595D-ACA9-485C-8E76-729040CE4B0B}</ProjectGuid>
+    <RootNamespace>openframeworksLib</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworksCompiled\lib\vs2010\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">obj\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworksCompiled\lib\vs2010\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">obj\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(ProjectName)Debug</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events;C:\Users\Owner\Desktop\ofs\oF\libs\glut\include;C:\Users\Owner\Desktop\ofs\oF\libs\rtAudio\include;C:\Users\Owner\Desktop\ofs\oF\libs\quicktime\include;C:\Users\Owner\Desktop\ofs\oF\libs\freetype\include;C:\Users\Owner\Desktop\ofs\oF\libs\freetype\include\freetype2;C:\Users\Owner\Desktop\ofs\oF\libs\freeImage\include;C:\Users\Owner\Desktop\ofs\oF\libs\fmodex\include;C:\Users\Owner\Desktop\ofs\oF\libs\videoInput\include;C:\Users\Owner\Desktop\ofs\oF\libs\glew\include\;C:\Users\Owner\Desktop\ofs\oF\libs\glu\include;C:\Users\Owner\Desktop\ofs\oF\libs\tess2\include;C:\Users\Owner\Desktop\ofs\oF\libs\cairo\include\cairo;C:\Users\Owner\Desktop\ofs\oF\libs\poco\include;C:\Users\Owner\Desktop\ofs\oF\libs\addons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <AdditionalIncludeDirectories>C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl;C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events;C:\Users\Owner\Desktop\ofs\oF\libs\glut\include;C:\Users\Owner\Desktop\ofs\oF\libs\rtAudio\include;C:\Users\Owner\Desktop\ofs\oF\libs\quicktime\include;C:\Users\Owner\Desktop\ofs\oF\libs\freetype\include;C:\Users\Owner\Desktop\ofs\oF\libs\freetype\include\freetype2;C:\Users\Owner\Desktop\ofs\oF\libs\freeImage\include;C:\Users\Owner\Desktop\ofs\oF\libs\fmodex\include;C:\Users\Owner\Desktop\ofs\oF\libs\videoInput\include;C:\Users\Owner\Desktop\ofs\oF\libs\glew\include\;C:\Users\Owner\Desktop\ofs\oF\libs\glu\include;C:\Users\Owner\Desktop\ofs\oF\libs\tess2\include;C:\Users\Owner\Desktop\ofs\oF\libs\cairo\include\cairo;C:\Users\Owner\Desktop\ofs\oF\libs\poco\include;C:\Users\Owner\Desktop\ofs\oF\libs\addons;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;POCO_STATIC;CAIRO_WIN32_STATIC_BUILD;DISABLE_SOME_FLOATING_POINT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\of3dUtils.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofCamera.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofEasyCam.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofMesh.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofNode.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app\ofAppBaseWindow.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app\ofBaseApp.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofFbo.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofGLRenderer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofGLUtils.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofLight.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofMaterial.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofShader.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofTexture.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofVbo.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofVboMesh.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofBitmapFont.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofCairoRenderer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofGraphics.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofImage.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofPath.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofPixels.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofPolyline.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofRendererCollection.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofTessellator.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofTrueTypeFont.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofMath.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofMatrix3x3.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofMatrix4x4.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofQuaternion.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofVec2f.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofVec3f.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofVec4f.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofVectorMath.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\ofMain.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app\ofAppGlutWindow.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app\ofAppRunner.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofBaseSoundPlayer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofBaseSoundStream.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofFmodSoundPlayer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofRtAudioSoundStream.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofSoundPlayer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofSoundStream.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofBaseTypes.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofColor.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofPoint.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofRectangle.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofTypes.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofConstants.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofFileUtils.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofLog.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofNoise.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofSystemUtils.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofThread.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofURLFileLoader.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofUtils.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofDirectShowGrabber.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofQtUtils.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofQuickTimeGrabber.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofQuickTimePlayer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofVideoGrabber.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofVideoPlayer.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication\ofArduino.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication\ofSerial.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events\ofEvents.h" />
+    <ClInclude Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events\ofEventUtils.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\of3dUtils.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofCamera.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofEasyCam.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofMesh.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d\ofNode.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app\ofAppGlutWindow.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app\ofAppRunner.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events\ofEvents.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofFbo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofGLRenderer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofLight.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofMaterial.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofShader.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofTexture.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofVbo.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl\ofVboMesh.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofBitmapFont.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofCairoRenderer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofGraphics.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofImage.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofPath.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofPixels.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofPolyline.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofTessellator.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics\ofTrueTypeFont.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofMath.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofMatrix3x3.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofMatrix4x4.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofQuaternion.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofVec2f.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math\ofVec4f.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofBaseSoundPlayer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofBaseSoundStream.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofFmodSoundPlayer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofRtAudioSoundStream.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofSoundPlayer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound\ofSoundStream.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofBaseTypes.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofColor.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofPoint.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types\ofRectangle.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofFileUtils.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofLog.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofSystemUtils.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofThread.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofURLFileLoader.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils\ofUtils.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofDirectShowGrabber.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofQtUtils.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofQuickTimeGrabber.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofQuickTimePlayer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofVideoGrabber.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video\ofVideoPlayer.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication\ofArduino.cpp" />
+    <ClCompile Include="C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication\ofSerial.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

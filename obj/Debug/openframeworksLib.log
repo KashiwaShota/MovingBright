@@ -1,0 +1,17 @@
+﻿2012/11/01 17:02:18 にビルドを開始しました。
+     1>ノード 2 上のプロジェクト "C:\Users\Owner\Desktop\ofs\camera\openframeworksLib.vcxproj" (build ターゲット)。
+     1>InitializeBuildStatus:
+         "AlwaysCreate" が指定されたため "obj\Debug\openframeworksLib.unsuccessfulbuild" を作成しています。
+       ClCompile:
+         すべての出力が最新のものです。
+       Lib:
+         すべての出力が最新のものです。
+         openframeworksLib.vcxproj -> C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworksCompiled\lib\vs2010\openframeworksLibDebug.lib
+       FinalizeBuildStatus:
+         ファイル "obj\Debug\openframeworksLib.unsuccessfulbuild" を削除しています。
+         "obj\Debug\openframeworksLib.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\Owner\Desktop\ofs\camera\openframeworksLib.vcxproj" (build ターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+
+経過時間 00:00:00.23
