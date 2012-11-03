@@ -1,4 +1,5 @@
 #include "testApp.h"
+#include "ofMath.h"
 
 ofVideoGrabber vidGrabber;
 ofImage img;
@@ -33,9 +34,61 @@ void testApp::draw(){
 	for(int i = 0; i < camHeight; i++){
 		for(int j = 0; j < camWidth; j++){
 			int p = i * camWidth * 3 + j * 3;
+			/*
+			//”½“]
 			pixels[p] = 255-pixels[p];
 			pixels[p + 1] = 255-pixels[p + 1];
 			pixels[p + 2] = 255-pixels[p + 2];
+			*/
+
+
+
+			//ˆÈ‰ºA’Ç‰Á‚µ‚½HSV‚Ö‚Ì•ÏŠ·
+			//RGB‚©‚çHSV‚Ö
+			int max, min;//Å‘å’l‚ÆÅ¬’l‚ðŠi”[‚·‚é•Ï”
+			//int len = pixels.length();
+			int hsv[405000];//hsv‚Ì”z—ñ‚ðéŒ¾
+			float max = Math.max(pixels[p], Math.max(pixels[p + 1], pixels[p + 2]));
+			float min = Math.min(pixels[p], Math.min(pixels[p + 1], pixels[p + 2]));
+			//F‘Š(hus)‚ÌŒˆ’è
+			if(max == min){
+				hsv[p] = 0;
+			}else if(max == pixels[p]){
+				hsv[p] = (60 * (pixels[p + 1] - pixels[p + 2]) / (max - min) + 360) % 360;
+			}else if(max == pixels[p + 1]){
+				hsv[p] = (60 * (pixels[p + 2] - pixels[p]) / (max - min)) + 120;
+			}else if(max == pixels[p + 2]){
+				hsv[p] = (60 * (pixels[p] - pixels[p + 1]) / (max - min)) + 240;
+			}
+			//Ê“x(saturation)‚ÌŒˆ’è
+			if(max == 0){
+				hsv[p + 1] = 0;
+			}else{
+				hsv[p + 1] = (255 * ((max - min) / max));
+			}
+			//–¾“x(value)‚ÌŒˆ’è
+			hsv[p + 2] = max;
+
+			//HSV‚ÉŽè‚ð‰Á‚¦‚é
+			hsv[p + 1] = 0;//FÊ‚ð0‚É‚µ‚Äƒ‚ƒmƒNƒ‰»
+
+			//HSV‚©‚çRGB‚Ö
+			float f;
+			int a, b, q, t,
+			a = (int)Math.floor(hsv[p] / 60.0f) % 6;
+			f = (float)(hsv[p] / 60.0f) - (float)Math.floor(hsv[p] / 60.0f);
+			b = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f)));
+			q = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * f));
+			t = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * (1.0f - f)));
+			//ê‡‚É‡‚í‚¹‚ÄRGB‚ðŒˆ’è‚·‚é
+			switch(a){
+				case 0: pixels[p] = hsv[p + 2]; pixels[p + 1] = t;          pixels[p + 2] = b;          break;
+				case 1: pixels[p] = q;          pixels[p + 1] = hsv[p + 2]; pixels[p + 2] = b;          break;
+				case 2: pixels[p] = b;          pixels[p + 1] = hsv[p + 2]; pixels[p + 2] = t;          break;
+				case 3: pixels[p] = b;          pixels[p + 1] = q;          pixels[p + 2] = hsv[p + 2]; break;
+				case 4: pixels[p] = t;          pixels[p + 1] = b;          pixels[p + 2] = hsv[p + 2]; break;
+				case 5: pixels[p] = hsv[p + 2]; pixels[p + 1] = b;          pixels[p + 2] = q;          break;
+			}
 		}
 	}
 	//ˆ—Œã‚Ì‰æ‘œ‚Ì•`‰æ
