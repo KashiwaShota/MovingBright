@@ -1,14 +1,137 @@
-﻿2012/11/04 14:06:37 にビルドを開始しました。
+﻿2012/11/05 1:12:41 にビルドを開始しました。
      1>ノード 3 上のプロジェクト "C:\Users\Owner\Desktop\ofs\camera\emptyExample.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
-         "obj\Debug\camra.unsuccessfulbuild" のタッチ タスクを実行しています。
+         "AlwaysCreate" が指定されたため "obj\Debug\camra.unsuccessfulbuild" を作成しています。
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events /IC:\Users\Owner\Desktop\ofs\oF\libs\glut\include /IC:\Users\Owner\Desktop\ofs\oF\libs\rtAudio\include /IC:\Users\Owner\Desktop\ofs\oF\libs\quicktime\include /IC:\Users\Owner\Desktop\ofs\oF\libs\freetype\include /IC:\Users\Owner\Desktop\ofs\oF\libs\freetype\include\freetype2 /IC:\Users\Owner\Desktop\ofs\oF\libs\freeImage\include /IC:\Users\Owner\Desktop\ofs\oF\libs\fmodex\include /IC:\Users\Owner\Desktop\ofs\oF\libs\videoInput\include /IC:\Users\Owner\Desktop\ofs\oF\libs\glew\include\ /IC:\Users\Owner\Desktop\ofs\oF\libs\glu\include /IC:\Users\Owner\Desktop\ofs\oF\libs\tess2\include /IC:\Users\Owner\Desktop\ofs\oF\libs\cairo\include\cairo /IC:\Users\Owner\Desktop\ofs\oF\libs\poco\include /IC:\Users\Owner\Desktop\ofs\oF\addons /Isrc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D POCO_STATIC /D CAIRO_WIN32_STATIC_BUILD /D DISABLE_SOME_FLOATING_POINT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Debug\\" /Fd"obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\testApp.cpp
          testApp.cpp
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(101): error C2086: 'int hoge' : 再定義されました。
-                 c:\users\owner\desktop\ofs\camera\src\testapp.cpp(99) : 'hoge' の宣言を確認してください。
-     1>プロジェクト "C:\Users\Owner\Desktop\ofs\camera\emptyExample.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
+       ManifestResourceCompile:
+         すべての出力が最新のものです。
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"bin\camra_debug.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\glut\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\rtAudio\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\FreeImage\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\freetype\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\quicktime\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\fmodex\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\videoInput\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\cairo\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\glew\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\glu\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\Poco\lib\vs2010 /LIBPATH:C:\Users\Owner\Desktop\ofs\oF\libs\tess2\lib\vs2010 "cairo-static.lib" "pixman-1.lib" msimg32.lib OpenGL32.lib GLu32.lib kernel32.lib setupapi.lib Vfw32.lib comctl32.lib glut32.lib rtAudioD.lib videoInput.lib libfreetype.lib FreeImage.lib qtmlClient.lib dsound.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib glew32s.lib fmodex_vc.lib glu32.lib PocoFoundationmdd.lib PocoNetmdd.lib PocoUtilmdd.lib PocoXMLmdd.lib Ws2_32.lib tess2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:PocoFoundationd.lib /NODEFAULTLIB:atlthunk.lib /NODEFAULTLIB:LIBC.lib /NODEFAULTLIB:LIBCMT /MANIFEST /ManifestFile:"obj\Debug\camra_debug.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Owner\Desktop\ofs\camera\bin\camra_debug_debugInfo.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"bin\camra_debug.lib" /MACHINE:X86 obj\Debug\camra_debug.exe.embed.manifest.res
+         obj\Debug\main.obj
+         obj\Debug\testApp.obj
+         C:\Users\Owner\Desktop\ofs\oF\libs\openFrameworksCompiled\lib\vs2010\openframeworksLibDebug.lib
+            ライブラリ bin\camra_debug.lib とオブジェクト bin\camra_debug.exp を作成中
+     1>MSVCRTD.lib(cinitexe.obj) : warning LNK4098: defaultlib 'msvcrt.lib' は他のライブラリの使用と競合しています。/NODEFAULTLIB:library を使用してください。
+     1>videoInput.lib(videoInput.obj) : warning LNK4099: PDB 'vc90.pdb' が 'videoInput.lib(videoInput.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc90.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Ascii.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Ascii.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(AtomicCounter.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(AtomicCounter.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Bugcheck.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Bugcheck.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Debugger.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Debugger.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Environment.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Environment.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Exception.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Exception.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(MemoryPool.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(MemoryPool.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(NumberFormatter.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(NumberFormatter.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(NumberParser.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(NumberParser.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(RefCountedObject.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(RefCountedObject.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(StringTokenizer.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(StringTokenizer.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Base64Decoder.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Base64Decoder.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Base64Encoder.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Base64Encoder.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(CountingStream.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(CountingStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(FileStream.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(FileStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(MemoryStream.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(MemoryStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(NullStream.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(NullStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(StreamCopier.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(StreamCopier.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(adler32.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(adler32.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(crc32.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(crc32.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(deflate.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(deflate.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(trees.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(trees.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(zutil.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(zutil.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Condition.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Condition.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(ErrorHandler.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(ErrorHandler.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Event.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Event.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Mutex.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Mutex.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Runnable.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Runnable.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(RWLock.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(RWLock.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Thread.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Thread.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(ThreadLocal.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(ThreadLocal.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(DigestEngine.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(DigestEngine.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(MD5Engine.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(MD5Engine.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(DirectoryIterator.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(DirectoryIterator.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(File.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(File.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Path.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Path.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(DateTime.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(DateTime.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(DateTimeFormat.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(DateTimeFormat.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(DateTimeFormatter.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(DateTimeFormatter.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(DateTimeParser.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(DateTimeParser.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(LocalDateTime.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(LocalDateTime.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Timespan.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Timespan.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Timestamp.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Timestamp.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Timezone.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Timezone.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(ASCIIEncoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(ASCIIEncoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Latin1Encoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Latin1Encoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Latin9Encoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Latin9Encoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(TextConverter.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(TextConverter.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(TextEncoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(TextEncoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(TextIterator.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(TextIterator.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(UnicodeConverter.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(UnicodeConverter.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(UTF16Encoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(UTF16Encoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(UTF8Encoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(UTF8Encoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(Windows1252Encoding.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(Windows1252Encoding.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(FileStreamFactory.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(FileStreamFactory.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(URI.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(URI.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(URIStreamFactory.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(URIStreamFactory.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoFoundationmdd.lib(URIStreamOpener.obj) : warning LNK4099: PDB 'pocofoundationmdd.pdb' が 'PocoFoundationmdd.lib(URIStreamOpener.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\pocofoundationmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(DNS.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(DNS.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HostEntry.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HostEntry.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(IPAddress.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(IPAddress.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(NetException.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(NetException.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(SocketAddress.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(SocketAddress.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(Socket.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(Socket.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(SocketImpl.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(SocketImpl.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(StreamSocket.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(StreamSocket.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(StreamSocketImpl.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(StreamSocketImpl.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(MediaType.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(MediaType.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(MessageHeader.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(MessageHeader.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(NameValueCollection.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(NameValueCollection.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPAuthenticationParams.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPAuthenticationParams.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPBasicCredentials.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPBasicCredentials.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPBufferAllocator.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPBufferAllocator.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPChunkedStream.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPChunkedStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPCookie.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPCookie.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPCredentials.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPCredentials.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPDigestCredentials.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPDigestCredentials.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPFixedLengthStream.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPFixedLengthStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPHeaderStream.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPHeaderStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPMessage.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPMessage.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPRequest.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPRequest.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPResponse.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPResponse.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPSession.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPSession.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPStream.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPClientSession.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPClientSession.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPIOStream.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPIOStream.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>PocoNetmdd.lib(HTTPStreamFactory.obj) : warning LNK4099: PDB 'poconetmdd.pdb' が 'PocoNetmdd.lib(HTTPStreamFactory.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\poconetmdd.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(bucketalloc.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(bucketalloc.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(dict.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(dict.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(geom.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(geom.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(mesh.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(mesh.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(priorityq.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(priorityq.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(sweep.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(sweep.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+     1>tess2.lib(tess.obj) : warning LNK4099: PDB 'vc100.pdb' が 'tess2.lib(tess.obj)' で、または 'C:\Users\Owner\Desktop\ofs\camera\bin\vc100.pdb' に見つかりません。デバッグ情報がないものとして、オブジェクトにリンクします。
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"obj\Debug\camra_debug.exe.embed.manifest" /manifest obj\Debug\camra_debug.exe.intermediate.manifest
+         すべての出力が最新のものです。
+       LinkEmbedManifest:
+         すべての出力が最新のものです。
+         emptyExample.vcxproj -> C:\Users\Owner\Desktop\ofs\camera\bin\camra_debug.exe
+       PostBuildEvent:
+         Description: adding DLLs and creating data folder
+         xcopy /e /i /y "C:\Users\Owner\Desktop\ofs\oF\export\vs2010\*.dll" "C:\Users\Owner\Desktop\ofs\camera\bin"
+         :VCEnd
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\Assimp32.dll
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\fmodex.dll
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\fmodexL.dll
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\FreeImage.dll
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\FreeType-6.dll
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\glut32.dll
+         C:\Users\Owner\Desktop\ofs\oF\export\vs2010\Zlib.dll
+         7 個のファイルをコピーしました
+       FinalizeBuildStatus:
+         ファイル "obj\Debug\camra.unsuccessfulbuild" を削除しています。
+         "obj\Debug\camra.lastbuildstate" のタッチ タスクを実行しています。
+     1>プロジェクト "C:\Users\Owner\Desktop\ofs\camera\emptyExample.vcxproj" (build ターゲット) のビルドが完了しました。
 
-ビルドに失敗しました。
+ビルドに成功しました。
 
-経過時間 00:00:02.04
+経過時間 00:00:08.30
