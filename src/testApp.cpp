@@ -30,7 +30,18 @@ void testApp::draw(){
 	
 	//現在のフレームのピクセル配列,RGB[width*height*3]のポインタを返します。
 	unsigned char * pixels = vidGrabber.getPixels();
-	//色反転処理
+
+
+
+	//前フレームのRGBを配列に格納
+	int prevRGB[405000];
+	for(int i = 0; i < 405000; i++){
+		prevRGB[i] = pixels[i];
+	}
+
+
+
+	//画像処理
 	for(int i = 0; i < camHeight; i++){
 		for(int j = 0; j < camWidth; j++){
 			int p = i * camWidth * 3 + j * 3;
@@ -48,8 +59,26 @@ void testApp::draw(){
 			int max, min;//最大値と最小値を格納する変数
 			//int len = pixels.length();
 			int hsv[405000];//hsvの配列を宣言
-			float max = Math.max(pixels[p], Math.max(pixels[p + 1], pixels[p + 2]));
-			float min = Math.min(pixels[p], Math.min(pixels[p + 1], pixels[p + 2]));
+			//float max = Math.mas(pixels[p], Math.max(pixels[p + 1], pixels[p + 2]));
+			//最大値の決定
+			if(pixels[p] >= pixels[p + 1]){
+				max = pixels[p];
+			}else{
+				max = pixels[p + 1];
+			}
+			if(pixels[p + 2] > max){
+				max = pixels[p + 2];
+			}
+			//float min = Math.min(pixels[p], Math.min(pixels[p + 1], pixels[p + 2]));
+			//最小値
+			if(pixels[p] <= pixels[p + 1]){
+				min = pixels[p];
+			}else{
+				min = pixels[p + 1];
+			}
+			if(pixels[p + 2] < min){
+				max = pixels[p + 2];
+			}
 			//色相(hus)の決定
 			if(max == min){
 				hsv[p] = 0;
@@ -69,19 +98,35 @@ void testApp::draw(){
 			//明度(value)の決定
 			hsv[p + 2] = max;
 
+
+
 			//HSVに手を加える
 			hsv[p + 1] = 0;//色彩を0にしてモノクロ化
+			//フレームの比較
+			/*
+			int varR = prevRGB[p] - pixels[p];//赤の変化量
+			int varG = prevRGB[p + 1] - pixels[p + 1];//緑の変化量
+			int varB = prevRGB[p + 2] - pixels[p + 2];//青の変化量
+			hsv[p + 1] = hsv[p + 1] varR varG varB;//明度の増減式
+			*/
+
+
 
 			//HSVからRGBへ
 			float f;
-			int a, b, q, t,
-			a = (int)Math.floor(hsv[p] / 60.0f) % 6;
-			f = (float)(hsv[p] / 60.0f) - (float)Math.floor(hsv[p] / 60.0f);
-			b = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f)));
-			q = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * f));
-			t = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * (1.0f - f)));
+			int hoge, b, q, t,
+			//a = (int)Math.floor(hsv[p] / 60.0f) % 6;
+			hoge = (hsv[p] / 60) % 6;
+			//f = (float)(hsv[p] / 60.0f) - (float)Math.floor(hsv[p] / 60.0f);
+			f = (hsv[p] / 60) - (hsv[p] / 60);
+  			//b = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f)));
+			b = (hsv[p + 2] * (1 - (hsv[p + 1] / 255))) + 0.5;
+			//q = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * f));
+			q = (hsv[p + 2] * (1 - (hsv[p + 1] / 255) * f)) + 0.5;
+			//t = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * (1.0f - f)));
+			t = (hsv[p + 2] * (1 - (hsv[p + 1] / 255) * (1 - f))) + 0.5;
 			//場合に合わせてRGBを決定する
-			switch(a){
+			switch(hoge){
 				case 0: pixels[p] = hsv[p + 2]; pixels[p + 1] = t;          pixels[p + 2] = b;          break;
 				case 1: pixels[p] = q;          pixels[p + 1] = hsv[p + 2]; pixels[p + 2] = b;          break;
 				case 2: pixels[p] = b;          pixels[p + 1] = hsv[p + 2]; pixels[p + 2] = t;          break;

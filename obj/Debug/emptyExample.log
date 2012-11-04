@@ -1,46 +1,14 @@
-﻿2012/11/04 5:55:58 にビルドを開始しました。
+﻿2012/11/04 14:06:37 にビルドを開始しました。
      1>ノード 3 上のプロジェクト "C:\Users\Owner\Desktop\ofs\camera\emptyExample.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "obj\Debug\camra.unsuccessfulbuild" のタッチ タスクを実行しています。
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events /IC:\Users\Owner\Desktop\ofs\oF\libs\glut\include /IC:\Users\Owner\Desktop\ofs\oF\libs\rtAudio\include /IC:\Users\Owner\Desktop\ofs\oF\libs\quicktime\include /IC:\Users\Owner\Desktop\ofs\oF\libs\freetype\include /IC:\Users\Owner\Desktop\ofs\oF\libs\freetype\include\freetype2 /IC:\Users\Owner\Desktop\ofs\oF\libs\freeImage\include /IC:\Users\Owner\Desktop\ofs\oF\libs\fmodex\include /IC:\Users\Owner\Desktop\ofs\oF\libs\videoInput\include /IC:\Users\Owner\Desktop\ofs\oF\libs\glew\include\ /IC:\Users\Owner\Desktop\ofs\oF\libs\glu\include /IC:\Users\Owner\Desktop\ofs\oF\libs\tess2\include /IC:\Users\Owner\Desktop\ofs\oF\libs\cairo\include\cairo /IC:\Users\Owner\Desktop\ofs\oF\libs\poco\include /IC:\Users\Owner\Desktop\ofs\oF\addons /Isrc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D POCO_STATIC /D CAIRO_WIN32_STATIC_BUILD /D DISABLE_SOME_FLOATING_POINT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Debug\\" /Fd"obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\testApp.cpp
          testApp.cpp
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(51): error C2371: 'max' : 再定義されています。異なる基本型です。
-                 c:\users\owner\desktop\ofs\camera\src\testapp.cpp(48) : 'max' の宣言を確認してください。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(51): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(51): error C2228: '.max' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(51): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(51): error C2228: '.max' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(52): error C2371: 'min' : 再定義されています。異なる基本型です。
-                 c:\users\owner\desktop\ofs\camera\src\testapp.cpp(48) : 'min' の宣言を確認してください。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(52): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(52): error C2228: '.min' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(52): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(52): error C2228: '.min' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(70): error C2440: '=' : 'int' から 'int' に変換できません。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(78): error C2086: 'int a' : 再定義されました。
-                 c:\users\owner\desktop\ofs\camera\src\testapp.cpp(77) : 'a' の宣言を確認してください。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(78): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(78): error C2228: '.floor' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(79): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(79): error C2228: '.floor' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(80): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(80): error C2228: '.round' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(81): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(81): error C2228: '.round' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(82): error C2065: 'Math' : 定義されていない識別子です。
-     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(82): error C2228: '.round' の左側はクラス、構造体、共用体でなければなりません
-                 型は ''unknown-type'' です。
+     1>c:\users\owner\desktop\ofs\camera\src\testapp.cpp(101): error C2086: 'int hoge' : 再定義されました。
+                 c:\users\owner\desktop\ofs\camera\src\testapp.cpp(99) : 'hoge' の宣言を確認してください。
      1>プロジェクト "C:\Users\Owner\Desktop\ofs\camera\emptyExample.vcxproj" (build ターゲット) のビルドが終了しました -- 失敗。
 
 ビルドに失敗しました。
 
-経過時間 00:00:02.71
+経過時間 00:00:02.04
