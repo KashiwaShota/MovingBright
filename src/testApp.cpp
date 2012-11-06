@@ -1,9 +1,21 @@
 #include "testApp.h"
 
-
 ofVideoGrabber vidGrabber;
-int prevRGB[405000];//前フレームの配列を宣言
-int hsv[405000];//hsvの配列を宣言
+int hsv[405000];//HSVの配列を宣言(int = hsv[p])
+/*
+hsv[p] = 色相(hus)
+hsv[p + 1] = 彩度(saturation)
+hsv[p + 2] = 明度(value)
+*/
+/*
+int max, min;//最大値と最小値を格納
+これだけ此処で宣言するとあいまいな変数だと言われる
+*/
+int preValue[];//前フレーム明度をの配列を宣言
+float varAbs;//絶対値を格納
+//HSVからRGBへ変換時に使用する変数
+float f;
+int hoge, b, q, t;
 ofImage img;
 int camWidth, camHeight;
 
@@ -28,42 +40,15 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
 	ofSetColor(0xFFFFFF);//描画色(黒)
-	vidGrabber.draw(20,20);//20,20から描画する
-	
-	//現在のフレームのピクセル配列,RGB[width*height*3]のポインタを返します。
+	vidGrabber.draw(20,20);//元映像を描画する
+	//現在のフレームのピクセル配列,RGB[width*height*3]のポインタを返す
 	unsigned char * pixels = vidGrabber.getPixels();
-
-
-
-	//前フレームのRGBを配列に格納
-	/*int prevRGB[405000];
-	for(int i = 0; i < 405000; i++){
-		prevRGB[i] = pixels[i];
-	}*/
-
-
-
-	//画像処理
 	for(int i = 0; i < camHeight; i++){
 		for(int j = 0; j < camWidth; j++){
 			int p = i * camWidth * 3 + j * 3;
-			
-			//反転
-			/*
-			pixels[p] = 255-pixels[p];
-			pixels[p + 1] = 255-pixels[p + 1];
-			pixels[p + 2] = 255-pixels[p + 2];
-			*/
-
-
-			
-			//以下、追加したHSVへの変換
 			//RGBからHSVへ
-			int max, min;//最大値と最小値を格納する変数
-			//int len = pixels.length();
-			//int hsv[405000];//hsvの配列を宣言
-			//float max = Math.mas(pixels[p], Math.max(pixels[p + 1], pixels[p + 2]));
-			//最大値の決定
+			int max, min;//最大値と最小値を格納
+			//最大値(max)の決定
 			if(pixels[p] >= pixels[p + 1]){
 				max = pixels[p];
 			}else{
@@ -72,8 +57,7 @@ void testApp::draw(){
 			if(pixels[p + 2] > max){
 				max = pixels[p + 2];
 			}
-			//float min = Math.min(pixels[p], Math.min(pixels[p + 1], pixels[p + 2]));
-			//最小値
+			//最小値(min)の決定
 			if(pixels[p] <= pixels[p + 1]){
 				min = pixels[p];
 			}else{
@@ -82,7 +66,7 @@ void testApp::draw(){
 			if(pixels[p + 2] < min){
 				max = pixels[p + 2];
 			}
-			//色相(hus)の決定
+			//色相(hsv[p])の決定
 			if(max == min){
 				hsv[p] = 0;
 			}else if(max == pixels[p]){
@@ -92,41 +76,39 @@ void testApp::draw(){
 			}else if(max == pixels[p + 2]){
 				hsv[p] = (60 * (pixels[p] - pixels[p + 1]) / (max - min)) + 240;
 			}
-			//彩度(saturation)の決定
+			//彩度(hsv[p + 1])の決定
 			if(max == 0){
 				hsv[p + 1] = 0;
 			}else{
 				hsv[p + 1] = (255 * ((max - min) / max));
 			}
-			//明度(value)の決定
+			//明度(hsv[p + 2])の決定
 			hsv[p + 2] = max;
-
-
-
+			
+			
+			
 			//HSVに手を加える
 			hsv[p + 1] = 0;//色彩を0にしてモノクロ化
-			//フレームの比較
-
-			//int varR = prevRGB[p] - pixels[p];//赤の変化量
-			//int varG = prevRGB[p + 1] - pixels[p + 1];//緑の変化量
-			//int varB = prevRGB[p + 2] - pixels[p + 2];//青の変化量
-			//hsv[p + 1] = hsv[p + 1] varR varG varB;//明度の増減式
-
+			//前フレームと現在フレームの明度比較
+			/*
+			//明度配列の格納する場所を求める
+			if(preValue[] >= hsv[p + 2]){
+				varAbs = preValue[] - hsv[p + 2];//絶対値を決定
+			}else{
+				varAbs = hsv[p + 2] - preValue[];//絶対値を決定
+			}
+			preValue[] = hsv[p + 2];//明度配列に現在の明度を格納
+			//絶対値から増減割合を決定
+			hsv[p + 2] = hsv[p + 2] * hoge;//明度を増減
+			*/
 
 
 
 			//HSVからRGBへ
-			float f;
-			int hoge, b, q, t;
-			//a = (int)Math.floor(hsv[p] / 60.0f) % 6;
 			hoge = (hsv[p] / 60) % 6;
-			//f = (float)(hsv[p] / 60.0f) - (float)Math.floor(hsv[p] / 60.0f);
 			f = (hsv[p] / 60) - (hsv[p] / 60);
-  			//b = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f)));
 			b = (hsv[p + 2] * (1 - (hsv[p + 1] / 255))) + 0.5;
-			//q = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * f));
 			q = (hsv[p + 2] * (1 - (hsv[p + 1] / 255) * f)) + 0.5;
-			//t = (int)Math.round(hsv[p + 2] * (1.0f - (hsv[p + 1] / 255.0f) * (1.0f - f)));
 			t = (hsv[p + 2] * (1 - (hsv[p + 1] / 255) * (1 - f))) + 0.5;
 			//場合に合わせてRGBを決定する
 			switch(hoge){
@@ -139,9 +121,11 @@ void testApp::draw(){
 			}
 		}
 	}
-	//処理後の画像の描画
+
+
+	//画像処理後
 	img.setFromPixels(pixels, camWidth, camHeight, OF_IMAGE_COLOR);
-	img.draw(20, 330);//20,330から画像処理したモノを描画する
+	img.draw(20, 330);//画像処理したモノを描画する
 }
 
 //--------------------------------------------------------------
