@@ -1,7 +1,7 @@
-﻿2012/11/06 14:26:38 にビルドを開始しました。
+﻿2012/11/09 8:46:03 にビルドを開始しました。
      1>ノード 3 上のプロジェクト "C:\Users\Owner\Desktop\ofs\camera\emptyExample.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
-         "obj\Debug\camra.unsuccessfulbuild" のタッチ タスクを実行しています。
+         "AlwaysCreate" が指定されたため "obj\Debug\camra.unsuccessfulbuild" を作成しています。
        ClCompile:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\graphics /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\app /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\sound /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\utils /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\communication /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\video /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\types /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\math /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\3d /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\gl /IC:\Users\Owner\Desktop\ofs\oF\libs\openFrameworks\events /IC:\Users\Owner\Desktop\ofs\oF\libs\glut\include /IC:\Users\Owner\Desktop\ofs\oF\libs\rtAudio\include /IC:\Users\Owner\Desktop\ofs\oF\libs\quicktime\include /IC:\Users\Owner\Desktop\ofs\oF\libs\freetype\include /IC:\Users\Owner\Desktop\ofs\oF\libs\freetype\include\freetype2 /IC:\Users\Owner\Desktop\ofs\oF\libs\freeImage\include /IC:\Users\Owner\Desktop\ofs\oF\libs\fmodex\include /IC:\Users\Owner\Desktop\ofs\oF\libs\videoInput\include /IC:\Users\Owner\Desktop\ofs\oF\libs\glew\include\ /IC:\Users\Owner\Desktop\ofs\oF\libs\glu\include /IC:\Users\Owner\Desktop\ofs\oF\libs\tess2\include /IC:\Users\Owner\Desktop\ofs\oF\libs\cairo\include\cairo /IC:\Users\Owner\Desktop\ofs\oF\libs\poco\include /IC:\Users\Owner\Desktop\ofs\oF\addons /Isrc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D POCO_STATIC /D CAIRO_WIN32_STATIC_BUILD /D DISABLE_SOME_FLOATING_POINT /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"obj\Debug\\" /Fd"obj\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt src\testApp.cpp
          testApp.cpp
@@ -37,4 +37,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:06.75
+経過時間 00:00:03.51

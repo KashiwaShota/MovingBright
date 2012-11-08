@@ -1,4 +1,4 @@
-﻿2012/11/06 14:26:38 にビルドを開始しました。
+﻿2012/11/09 8:46:03 にビルドを開始しました。
      1>ノード 2 上のプロジェクト "C:\Users\Owner\Desktop\ofs\camera\openframeworksLib.vcxproj" (build ターゲット)。
      1>InitializeBuildStatus:
          "AlwaysCreate" が指定されたため "obj\Debug\openframeworksLib.unsuccessfulbuild" を作成しています。
@@ -14,4 +14,4 @@
 
 ビルドに成功しました。
 
-経過時間 00:00:00.17
+経過時間 00:00:00.12
